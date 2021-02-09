@@ -104,19 +104,14 @@ command together if available.
 
 * `<Plug>JumpDiffCharPrevStart` (default: `[b`)
   * Jump cursor to the start position of the previous difference unit
-
 * `<Plug>JumpDiffCharNextStart` (default: `]b`)
   * Jump cursor to the start position of the next difference unit
-
 * `<Plug>JumpDiffCharPrevEnd` (default: `[e`)
   * Jump cursor to the end position of the previous difference unit
-
 * `<Plug>JumpDiffCharNextEnd` (default: `]e`)
   * Jump cursor to the end position of the next difference unit
-
 * `<Plug>GetDiffCharPair` (default: `<Leader>g`)
   * Get a corresponding difference unit from another buffer to undo difference
-
 * `<Plug>PutDiffCharPair` (default: `<Leader>p`)
   * Put a corresponding difference unit to another buffer to undo difference
 
