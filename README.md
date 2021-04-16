@@ -46,6 +46,8 @@ There are `:Diffthis`, `:Diffoff`, and `:Diffupdate` commands available.
   * Update the differences for the selected range of lines. If `!` flag is
     specified, the file is reloaded if necessary.
 
+#### Demo
+
 ![demoRS](demoRS.gif)
 
 ### Selecting A Visual Area
@@ -91,5 +93,7 @@ Note that they work in no-diff normal mode.
   * Compare the selected area again and show their differences in the
     current tab page, when you make changes to the selected area or you
     want to change `g:DiffUnit` or `g:DiffColors` option.
+
+#### Demo
 
 ![demoVS](demoVS.gif)
