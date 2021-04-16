@@ -53,7 +53,7 @@ There are `:Diffthis`, `:Diffoff`, and `:Diffupdate` commands available.
 ### Selecting A Visual Area
 
 There are `:VDiffthis`, `:VDiffoff`, and `:VDiffupdate` commands available.
-Note that they work in no-diff normal mode.
+Note that they work in non-diff normal mode.
 
 * `:[range]VDiffthis[!]`
   * Select the last characterwise, linewise, or blockwise visual area in
@@ -70,19 +70,17 @@ Note that they work in no-diff normal mode.
     the `g:DiffColors` option. It is possible to select two visual area in
     the same window.
 
-	`g:DiffUnit`, `t:DiffUnit`
-	    A type of difference unit
-		'Char'   : any single character
-		'Word1'  : \w\+ word and any \W single character (default)
-		'Word2'  : non-space and space words
-		'Word3'  : \< or \> character class boundaries
+    * `g:DiffUnit`, `t:DiffUnit` - A type of difference unit
+      * 'Char'   : any single character
+      * 'Word1'  : \w\\+ word and any \W single character (default)
+      * 'Word2'  : non-space and space words
+      * 'Word3'  : \\< or \\> character class boundaries
 
-	`g:DiffColors`, `t:DiffColors`
-	    Matching colors for changed units (always `hl-DiffAdd` for added units)
-		0   : `hl-DiffText` (default)
-		1   : `hl-DiffText` + up to 3 other highlights
-		2   : `hl-DiffText` + up to 7 other highlights
-		3   : `hl-DiffText` + up to 15 other highlights
+    * `g:DiffColors`, `t:DiffColors` - Matching colors for changed units (`hl-DiffAdd` for added units)
+      * 0   : `hl-DiffText` (default)
+      * 1   : `hl-DiffText` + up to 3 other highlights
+      * 2   : `hl-DiffText` + up to 7 other highlights
+      * 3   : `hl-DiffText` + up to 15 other highlights
 
 * `:VDiffoff[!]`
   * Clear the selected area in the current window and reset its
