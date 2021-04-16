@@ -12,8 +12,8 @@ separated into several lines.
 To compare partially everywhere in buffers, this plugin provides two groups of
 commands, which are alternative to vim original `:diffthis`, `:diffoff`, and
 `:diffupdate`. One is for which allows to select a range of lines to be
-compared in diff mode. Another is for which allows to select a visual area to
-be compared in non-diff normal mode. Both work independently in a tab page.
+compared in diff mode. Another is for which allows to select the Visual area
+to be compared in non-diff normal mode. Both work independently in a tab page.
 
 Do not use vim original diff commands together with this plugin's ones to
 prevent any errors and troubles.
@@ -22,7 +22,7 @@ It is recommended to install **diffchar.vim** plugin
 (https://github.com/rickhowe/diffchar.vim) so that you can see the exact
 differences.
 
-### Selecting A Range of Lines
+### Selecting a range of lines
 
 There are `:Diffthis`, `:Diffoff`, and `:Diffupdate` commands available.
 
@@ -50,15 +50,15 @@ There are `:Diffthis`, `:Diffoff`, and `:Diffupdate` commands available.
 
 ![demoRS](demoRS.gif)
 
-### Selecting A Visual Area
+### Selecting the Visual area
 
 There are `:VDiffthis`, `:VDiffoff`, and `:VDiffupdate` commands available.
 Note that they work in non-diff normal mode.
 
 * `:[range]VDiffthis[!]`
-  * Select the last characterwise, linewise, or blockwise visual area in
-    the current window. If `[range]` is different from the last visual area,
-    it is selected as linewise visual area. The selected area is
+  * Select the last characterwise, linewise, or blockwise Visual area in
+    the current window. If `[range]` is different from the last Visual area,
+    it is selected as linewise Visual area. The selected area is
     highlighted in `hl-DiffChange` with "italic", and then will be
     compared as a single combined line. But if `!` flag is specified, each
     line is separately compared, which would be useful particular for
@@ -67,7 +67,7 @@ Note that they work in non-diff normal mode.
     the two area are selected, `:VDiffthis` compares them based on the
     `g:DiffUnit` option and "icase", "iwhite", "iwhiteall" and "iwhiteeol"
     flags in the 'diffopt' option. Then their differences are shown using
-    the `g:DiffColors` option. It is possible to select two visual area in
+    the `g:DiffColors` option. It is possible to select two Visual area in
     the same window.
 
     * `g:DiffUnit`, `t:DiffUnit` - A type of difference unit
@@ -76,7 +76,7 @@ Note that they work in non-diff normal mode.
       * 'Word2'  : non-space and space words
       * 'Word3'  : \\< or \\> character class boundaries
 
-    * `g:DiffColors`, `t:DiffColors` - Matching colors for changed units (`hl-DiffAdd` for added units)
+    * `g:DiffColors`, `t:DiffColors` - Matching colors for changed units (always `hl-DiffAdd` for added units)
       * 0   : `hl-DiffText` (default)
       * 1   : `hl-DiffText` + up to 3 other highlights
       * 2   : `hl-DiffText` + up to 7 other highlights
