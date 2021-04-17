@@ -1,6 +1,6 @@
 # spotdiff.vim
 
-## A range and area selectable diffthis to compare partially
+## A range and area selectable `:diffthis` to compare partially
 
 ### Introduction
 
