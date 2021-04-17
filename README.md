@@ -4,12 +4,12 @@
 
 ### Introduction
 
-Vim provides diff mode which is useful to see differences between buffers.
-However, it always shows the differences for entire line of buffers. And it
-can not compare a part of line, and sentences and paragraphs which are
+Vim provides diff mode which is useful to see differences between windows.
+However, it always shows the differences for entire line. And can not compare
+a sequence of words in a line, and sentences and paragraphs which are
 separated into several lines.
 
-To compare partially everywhere in buffers, this plugin provides two groups of
+To compare partially everywhere in windows, this plugin provides two groups of
 commands, which are alternative to vim original `:diffthis`, `:diffoff`, and
 `:diffupdate`. One is for which allows to select a range of lines to be
 compared in diff mode. Another is for which allows to select the Visual area
@@ -76,7 +76,7 @@ Note that they work in non-diff normal mode.
       * 'Word2'  : non-space and space words
       * 'Word3'  : \\< or \\> character class boundaries
 
-    * `g:DiffColors`, `t:DiffColors` - Matching colors for changed units (always `hl-DiffAdd` for added units)
+    * `g:DiffColors`, `t:DiffColors` - Matching colors for changed units (`hl-DiffAdd` for added units)
       * 0   : `hl-DiffText` (default)
       * 1   : `hl-DiffText` + up to 3 other highlights
       * 2   : `hl-DiffText` + up to 7 other highlights
