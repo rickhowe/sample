@@ -1,6 +1,6 @@
 # spotdiff.vim
 
-## A range and area selectable :diffthis to compare partially
+### A range and area selectable :diffthis to compare partially
 
 Vim provides diff mode which is useful to see differences between windows.
 However, it always shows the differences for entire line.  And it can not
