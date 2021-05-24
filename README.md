@@ -76,9 +76,9 @@ next 3 sentences as the Visual area.  And `<Leader>o` clears the selected
 area.
 
 In addition to selecting the Visual area, you can use `<Leader>t` or `<Leader>T`
-as a custom operator followed by a motion or a text object command to select
-the area and then call `:VDiffthis` or `:VDiffthis!`.  `<Leader>t$` and
-`<Leader>t3is` work same as above examples.
+as a custom operator followed by a motion or a text object command, which will
+set those area as the Visual one and then call `:VDiffthis` or `:VDiffthis!`.
+`<Leader>t$` and `<Leader>t3is` work same as above examples.
 
 #### Commands
 
@@ -146,10 +146,10 @@ These keymaps are used only in this plugin.
 
 * `<Plug>(VDiffthis)` (default: `<Leader>t`)
 	* call `:VDiffthis` for the visually selected area
-	* select the motion and text object area and then call `:VDiffthis` 
+	* set the selected motion and text object area as the Visual one and then call `:VDiffthis` 
 * `<Plug>(VDiffthis!)` (default: `<Leader>T`)
 	* call `:VDiffthis!` for the visually selected area
-	* select the motion and text object area and then call `:VDiffthis!` 
+	* set the selected motion and text object area as the Visual one and then call `:VDiffthis!` 
 * `<Plug>(VDiffoff)` (default: `<Leader>o`)
 	* call `:VDiffoff` in the current window
 * `<Plug>(VDiffoff!)` (default: `<Leader>O`)
