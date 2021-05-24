@@ -155,7 +155,7 @@ These keymaps are used only in this plugin.
 * `<Plug>(VDiffoff!)` (default: `<Leader>O`)
 	* call `:VDiffoff!` in the current tab page
 * `<Plug>(VDiffupdate)` (default: `<Leader>u`)
-	* call `:VDiffoff` in the current tab page
+	* call `:VDiffupdate` in the current tab page
 
 #### Demo
 
