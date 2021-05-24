@@ -23,11 +23,7 @@ You can specify a range of lines to be compared in `:Diffthis`.  And can use
 Do not use vim original diff commands together with this plugin's ones.  Try
 `:Diffoff!` to reset all in case of a trouble.
 
-If you have installed **diffchar.vim** plugin
-(https://github.com/rickhowe/diffchar.vim), you can see the exact differences
-and use their options and keymaps.
-
-If you have installed ![diffchar.vim](https://github.com/rickhowe/diffchar.vim)
+If you have installed [diffchar.vim](https://github.com/rickhowe/diffchar.vim)
 plugin, you can see the exact differences and use their options and keymaps.
 
 #### Commands
@@ -115,7 +111,7 @@ the area and then call `:VDiffthis` or `:VDiffthis!`.  `<Leader>t$` and
 
 #### Options
 
-These options are used in the **diffchar.vim** plugin as well.
+These options are used in the [diffchar.vim](https://github.com/rickhowe/diffchar.vim) plugin as well.
 
 * `g:DiffUnit`, `t:DiffUnit`: A type of difference unit
 	* 'Char'  : any single character
@@ -135,7 +131,7 @@ These options are used in the **diffchar.vim** plugin as well.
 
 #### Keymaps
 
-These keymaps are used in the **diffchar.vim** plugin as well.
+These keymaps are used in the [diffchar.vim](https://github.com/rickhowe/diffchar.vim) plugin as well.
 
 * `<Plug>JumpDiffCharPrevStart` (default: `[b`)
 	* Jump cursor to the start position of the previous difference unit
