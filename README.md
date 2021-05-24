@@ -2,8 +2,6 @@
 
 ## A range and area selectable :diffthis to compare partially
 
-### Introduction
-
 Vim provides diff mode which is useful to see differences between windows.
 However, it always shows the differences for entire line.  And it can not
 compare a sequence of words within a line, and sentences and paragraphs which
@@ -86,7 +84,7 @@ the area and then call `:VDiffthis` or `:VDiffthis!`.  "<Leader>t$" and
 #### Commands
 
 * `:[range]VDiffthis[!]`
-      * Select the last characterwise, linewise, or blockwise Visual area used
+	* Select the last characterwise, linewise, or blockwise Visual area used
 	in the current window.  If `[range]` (default: current line) is not
 	specified as `'<,'>` and different from the last Visual area, those
 	specified lines are selected as linewise area instead.  The selected
@@ -102,13 +100,13 @@ the area and then call `:VDiffthis` or `:VDiffthis!`.  "<Leader>t$" and
 	the same window.
 
 * `:[range]VDiffoff[!]`
-      * Clear the selected area within `[range]` (default: all lines) in the
+	* Clear the selected area within `[range]` (default: all lines) in the
 	current window and reset its differences.  When there are two area
 	selected in the same window, use `[range]` to clear either one.  If `!`
 	flag is specified, clear and reset all area in the current tab page.
 
 * `:VDiffupdate`
-      * Compare the selected area again and show their differences in the
+	* Compare the selected area again and show their differences in the
 	current tab page, when you make changes to the selected area or you
 	want to change the `g:DiffUnit` or `g:DiffColors` option.
 
@@ -139,28 +137,28 @@ These options are used in the **diffchar.vim** plugin as well.
 
 These keymaps are used in the **diffchar.vim** plugin as well.
 
-* <Plug>JumpDiffCharPrevStart (default: `[b`)
+* `<Plug>JumpDiffCharPrevStart` (default: `[b`)
 	* Jump cursor to the start position of the previous difference unit
-* <Plug>JumpDiffCharNextStart (default: `]b`)
+* `<Plug>JumpDiffCharNextStart` (default: `]b`)
 	* Jump cursor to the start position of the next difference unit
-* <Plug>JumpDiffCharPrevEnd (default: `[e`)
+* `<Plug>JumpDiffCharPrevEnd` (default: `[e`)
 	* Jump cursor to the end position of the previous difference unit
-* <Plug>JumpDiffCharNextEnd (default: `]e`)
+* `<Plug>JumpDiffCharNextEnd` (default: `]e`)
 	* Jump cursor to the end position of the next difference unit
 
 These keymaps are used only in this plugin.
 
-* <Plug>(VDiffthis) (default: `<Leader>t`)
+* `<Plug>(VDiffthis)` (default: `<Leader>t`)
 	* call `:VDiffthis` for the visually selected area
 	* select the motion and text object area and then call `:VDiffthis` 
-* <Plug>(VDiffthis!) (default: `<Leader>T`)
+* `<Plug>(VDiffthis!)` (default: `<Leader>T`)
 	* call `:VDiffthis!` for the visually selected area
 	* select the motion and text object area and then call `:VDiffthis!` 
-* <Plug>(VDiffoff) (default: `<Leader>o`)
+* `<Plug>(VDiffoff)` (default: `<Leader>o`)
 	* call `:VDiffoff` in the current window
-* <Plug>(VDiffoff!) (default: `<Leader>O`)
+* `<Plug>(VDiffoff!)` (default: `<Leader>O`)
 	* call `:VDiffoff!` in the current tab page
-* <Plug>(VDiffupdate) (default: `<Leader>u`)
+* `<Plug>(VDiffupdate)` (default: `<Leader>u`)
 	* call `:VDiffoff` in the current tab page
 
 #### Demo
