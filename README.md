@@ -27,6 +27,9 @@ If you have installed **diffchar.vim** plugin
 (https://github.com/rickhowe/diffchar.vim), you can see the exact differences
 and use their options and keymaps.
 
+If you have installed ![diffchar.vim](https://github.com/rickhowe/diffchar.vim)
+plugin, you can see the exact differences and use their options and keymaps.
+
 #### Commands
 
 * `:[range]Diffthis`
@@ -114,22 +117,19 @@ the area and then call `:VDiffthis` or `:VDiffthis!`.  `<Leader>t$` and
 
 These options are used in the **diffchar.vim** plugin as well.
 
-* `g:DiffUnit`, `t:DiffUnit`
-	A type of difference unit
+* `g:DiffUnit`, `t:DiffUnit`: A type of difference unit
 	* 'Char'  : any single character
 	* 'Word1' : `\w\+` word and any `\W` single character (default)
 	* 'Word2' : non-space and space words
 	* 'Word3' : `\<` or `\>` character class boundaries
 
-* `g:DiffColors`, `t:DiffColors`
-	Matching colors for changed units (`hl-DiffAdd` for added units)
+* `g:DiffColors`, `t:DiffColors`: Matching colors for changed units
 	* 0 : `hl-DiffText` (default)
 	* 1 : `hl-DiffText` + up to 3 other highlights
 	* 2 : `hl-DiffText` + up to 7 other highlights
 	* 3 : `hl-DiffText` + up to 15 other highlights
 
-* `g:DiffPairVisible`, `t:DiffPairVisible`
-	Visibility of corresponding diff units
+* `g:DiffPairVisible`, `t:DiffPairVisible`: Visibility of corresponding diff units
 	* 0 : disable
 	* 1 : highlight with `hl-Cursor` (default)
 
