@@ -76,10 +76,10 @@ current cursor position to the end of line and `3vis<Leader>t` selects the
 next 3 sentences as the Visual area.  And `<Leader>o` clears the selected
 area.
 
-In addition to selecting the Visual area, you can use <Leader>t or <Leader>T
+In addition to selecting the Visual area, you can use `<Leader>t` or `<Leader>T`
 as a custom operator followed by a motion or a text object command to select
-the area and then call `:VDiffthis` or `:VDiffthis!`.  "<Leader>t$" and
-"<Leader>t3is" work same as above examples.
+the area and then call `:VDiffthis` or `:VDiffthis!`.  `<Leader>t$` and
+`<Leader>t3is` work same as above examples.
 
 #### Commands
 
@@ -117,9 +117,9 @@ These options are used in the **diffchar.vim** plugin as well.
 * `g:DiffUnit`, `t:DiffUnit`
 	A type of difference unit
 	* 'Char'  : any single character
-	* 'Word1' : \w\+ word and any \W single character (default)
+	* 'Word1' : `\w\+` word and any `\W` single character (default)
 	* 'Word2' : non-space and space words
-	* 'Word3' : \< or \> character class boundaries
+	* 'Word3' : `\<` or `\>` character class boundaries
 
 * `g:DiffColors`, `t:DiffColors`
 	Matching colors for changed units (`hl-DiffAdd` for added units)
