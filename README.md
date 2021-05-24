@@ -77,8 +77,8 @@ area.
 
 In addition to selecting the Visual area, you can use `<Leader>t` or `<Leader>T`
 as a custom operator followed by a motion or a text object command, which will
-set those area as the Visual one and then call `:VDiffthis` or `:VDiffthis!`.
-`<Leader>t$` and `<Leader>t3is` work same as above examples.
+set those selected area as the Visual one and then call `:VDiffthis` or
+`:VDiffthis!`.  `<Leader>t$` and `<Leader>t3is` work same as above examples.
 
 #### Commands
 
@@ -88,15 +88,15 @@ set those area as the Visual one and then call `:VDiffthis` or `:VDiffthis!`.
 	specified as `'<,'>` and different from the last Visual area, those
 	specified lines are selected as linewise area instead.  The selected
 	area is highlighted in `hl-DiffChange` with "italic", and then will be
-	compared as a single combined line.  But if `!` flag is specified,
-	each line is separately compared, which would be useful particular for
-	columns in a table on blockwise area.  Redundant lines in the
-	line-by-line comparison are shown with "strikethrough".  Shortly after
-	the two area are selected, `:VDiffthis` compares them based on the
-	`g:DiffUnit` option and "icase", "iwhite", "iwhiteall" and "iwhiteeol"
-	flags in the 'diffopt' option.  Then their differences are shown using
-	the `g:DiffColors` option.  It is possible to select two area even in
-	the same window.
+	compared as a single combined line.  Shortly after the two area are
+	selected, `:VDiffthis` compares them based on the `g: DiffUnit` option
+	and "icase", "iwhite", "iwhiteall" and "iwhiteeol" flags in the
+	'diffopt' option.  Then their differences are shown using the
+	`g:DiffColors` option.  It is possible to select two area even in the
+	same window.  If `!` flag is specified, each line is separately
+	compared, which would be useful particular for columns in a table on
+	blockwise area.  Redundant lines in the line-by-line comparison are
+	shown with "strikethrough".
 
 * `:[range]VDiffoff[!]`
 	* Clear the selected area within `[range]` (default: all lines) in the
