@@ -33,16 +33,16 @@ plugin, you can see the exact differences and use their options and keymaps.
 	the current window diff mode.  The selected lines are highlighted in
 	`hl-CursorColumn`.  Shortly after the two separate windows become diff
 	mode, `:Diffthis` shows the differences for selected lines in each
-	window.  It is possible to select two ranges of lines even in the same
-	window.  In the case, `:Diffthis` opens a temporary new window above
-	or below of the current one, copies selected lines to it, and shows
-	the difference with source window.
+	window.  It is also possible to select two ranges of lines in the same
+	window.  And then, `:Diffthis` opens a temporary new window above or
+	below of the current one, copies selected lines to it, and shows the
+	difference with source window.
 
 * `:Diffoff[!]`
 	* Clear the selected range of lines and reset diff mode for the current
 	window.  If `!` flag is specified, clear and reset for all windows in
-	the current tab page The temporary window created by `:Diffthis` will
-	be closed when its original window is cleared.
+	the current tab page.  The temporary window created by `:Diffthis`
+	will be closed when its original window is cleared.
 
 * `:Diffupdate`
 	* Update the differences for the selected range of lines in the current
