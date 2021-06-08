@@ -100,7 +100,7 @@ selected area as the Visual one and then call `:VDiffthis`.  For example,
 
 * `:[range]VDiffoff[!]`
 	* Clear the selected area within `[range]` (default: all lines) in the
-	current window and reset its differences.  When there are two area
+	current window and reset the differences.  When there are two area
 	selected in the same window, use `[range]` to clear either one.  If `!`
 	flag is specified, clear and reset all area in the current tab page.
 
@@ -111,7 +111,7 @@ selected area as the Visual one and then call `:VDiffthis`.  For example,
 
 #### Options
 
-These options are used in the [diffchar.vim](https://github.com/rickhowe/diffchar.vim) plugin as well.
+These options are same as those used in the [diffchar.vim](https://github.com/rickhowe/diffchar.vim) plugin.
 
 * `g:DiffUnit`, `t:DiffUnit`: A type of difference unit
 	* 'Char'  : any single character
@@ -131,7 +131,7 @@ These options are used in the [diffchar.vim](https://github.com/rickhowe/diffcha
 
 #### Keymaps
 
-These keymaps are used in the [diffchar.vim](https://github.com/rickhowe/diffchar.vim) plugin as well.
+These keymaps are same as those used in the [diffchar.vim](https://github.com/rickhowe/diffchar.vim) plugin.
 
 * `<Plug>JumpDiffCharPrevStart` (default: `[b`)
 	* Jump cursor to the start position of the previous difference unit
