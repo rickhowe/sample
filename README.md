@@ -56,9 +56,9 @@ plugin, you can see the exact differences and use their options and keymaps.
 
 There are `:VDiffthis`, `:VDiffoff`, and `:VDiffupdate` commands available.
 
-You can specify the Visual area to be compared in `:VDiffthis`.  And can use
-`:VDiffoff` to reset and `:VDiffupdate` to update the differences.  Note that
-those commands work in non-diff normal mode.
+You can use `:VDiffthis` to specify the Visual area to be compared,  And can
+use `:VDiffoff` to reset and `:VDiffupdate` to update the differences.  Note
+that those commands work in non-diff normal mode.
 
 While showing the exact differences, when the cursor is moved on a difference
 unit, you can see its corresponding unit highlighted in `hl-Cursor`, according
@@ -68,17 +68,17 @@ You can use `]b` or `]e` to jump cursor to start or end position of the next
 difference unit, and `[b` or `[e` to the start or end position of the previous
 unit.
 
-This plugin provides the corresponding mappings to the commands, such as
-`<Plug>(VDiffthis)` and `<Plug>(VDiffoff)` to which `<Leader>t` and `<Leader>o` keys
-are mapped as default.  For example, `v$<Leader>t` selects the text from the
-current cursor position to the end of line and `3vis<Leader>t` selects the
+This plugin provides the corresponding mappings to those commands, such as
+`<Plug>(VDiffthis)` and `<Plug>(VDiffoff)`.  As a default, `<Leader>t` and `<Leader>o`
+keys are mapped to them and, for example, `v$<Leader>t` selects the text from
+the current cursor position to the end of line and `3vis<Leader>t` selects the
 next 3 sentences as the Visual area.  And `<Leader>o` clears the selected
 area.
 
-In addition to selecting the Visual area, you can use `<Leader>t` or `<Leader>T`
-as a custom operator followed by a motion or a text object command, which will
-set those selected area as the Visual one and then call `:VDiffthis` or
-`:VDiffthis!`.  `<Leader>t$` and `<Leader>t3is` work same as above examples.
+In addition to selecting the Visual area, you can use `<Leader>t` as a custom
+operator followed by a motion or a text object command, which will set those
+selected area as the Visual one and then call `:VDiffthis`.  For example,
+`<Leader>t$` and `<Leader>t3is` work same as above examples.
 
 #### Commands
 
