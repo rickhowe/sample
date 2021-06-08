@@ -2,7 +2,7 @@
 
 ### A range and area selectable `:diffthis` to compare partially
 
-Vim provides diff mode which is useful to see differences between windows.
+Vim provides a diff mode which is useful to see differences between windows.
 However, it always shows the differences for entire line.  And it can not
 compare a sequence of words within a line, and sentences and paragraphs which
 are separated into several lines.
@@ -17,11 +17,11 @@ object area in non-diff normal mode.  Both work independently in a tab page.
 
 There are `:Diffthis`, `:Diffoff`, and `:Diffupdate` commands available.
 
-You can specify a range of lines to be compared in `:Diffthis`.  And can use
-`:Diffoff` to reset and `:Diffupdate` to update the differences.
+You can use `:Diffthis` to specify a range of lines to be compared.  And can
+use `:Diffoff` to reset and `:Diffupdate` to update the differences.
 
 Do not use vim original diff commands together with this plugin's ones.  Try
-`:Diffoff!` to reset all in case of a trouble.
+`:Diffoff!` to reset all in a trouble.
 
 If you have installed [diffchar.vim](https://github.com/rickhowe/diffchar.vim)
 plugin, you can see the exact differences and use their options and keymaps.
