@@ -83,17 +83,17 @@ selected area as the Visual one and then call `:VDiffthis`.  For example,
 #### Commands
 
 * `:[range]VDiffthis[!]`
-	* Select the last characterwise, linewise, or blockwise Visual area used
-	in the current window.  If `[range]` (default: current line) is not
-	specified as `'<,'>` and different from the last Visual area, those
-	specified lines are selected as linewise area instead.  The selected
-	area is highlighted in `hl-DiffChange` with "italic", and then will be
-	compared as a single combined line.  Shortly after the two area are
-	selected, `:VDiffthis` compares them based on the `g: DiffUnit` option
-	and "icase", "iwhite", "iwhiteall" and "iwhiteeol" flags in the
-	'diffopt' option.  Then their differences are shown using the
-	`g:DiffColors` option.  It is possible to select two area even in the
-	same window.  If `!` flag is specified, each line is separately
+	* Select the characterwise, linewise, or blockwise Visual area most
+	recently used in the current window.  If `[range]` (default: current
+	line) is not specified as `'<,'>` and different from the last Visual
+	area, those specified lines are selected as linewise area instead.
+	The selected area is highlighted in `hl-DiffChange` with "italic", and
+	then will be compared as a single combined line.  Shortly after the
+	two area are selected, `:VDiffthis` compares them based on the
+	`g:DiffUnit` option and "icase", "iwhite", "iwhiteall" and "iwhiteeol"
+	flags in the 'diffopt' option.  Then their differences are shown using
+	the `g:DiffColors` option.  It is also possible to select two area in
+	the same window.  If `!` flag is specified, each line is separately
 	compared, which would be useful particular for columns in a table on
 	blockwise area.  Redundant lines in the line-by-line comparison are
 	shown with "strikethrough".
