@@ -1,35 +1,30 @@
-let s:ww = 'wrapwidth'
 function! s:RedrawWrapwidth() abort
-  let bn = bufnr('%')
+  let ww = 'wrapwidth'
+  let wn = win_getid()
+  let bn = winbufnr(wn)
   let bv = getbufvar(bn, '')
-  if has_key(bv, s:ww) && s:FindOtherVT(bn)
-    " if other virtual text is found, fire events to redraw wrapwidth
-    for ev in ['BufHidden', 'BufWinEnter']
-      call execute(join(['doautocmd', s:ww, ev]))
+  if has_key(bv, ww)
+    let bn = winbufnr(wn)
+    let wi = getwininfo(wn)[0]
+    let [tw, to] = (&cpoptions =~ 'n') ?
+                          \[wi.width, wi.textoff] : [wi.width - wi.textoff, 0]
+    let rl = []
+    for [ln, co, vl] in has('nvim') ?
+          \map(nvim_buf_get_extmarks(bn, nvim_get_namespaces()[ww], 0, -1,
+                                                        \#{details: v:true}),
+            \'[v:val[1] + 1, v:val[2] + 1, len(v:val[3].virt_text[0][0])]') :
+          \map(prop_list(1, #{end_lnum: -1, bufnr: bn, types: [ww]}),
+                                  \'[v:val.lnum, v:val.col, len(v:val.text)]')
+      if index(rl, ln) == -1 &&
+                            \(virtcol([ln, co], 1)[0] + vl - 1 + to) % tw != 0
+        " this virtual space is displayed at other column than right edge,
+        " redraw this line
+        call execute(map([0, bv[ww].lw[ln]], 'ln . "Wrapwidth " . v:val'))
+        let rl += [ln]
+      endif
     endfor
   endif
 endfunction
-if has('nvim')
-  function! s:FindOtherVT(bn) abort
-    for [ns, id] in items(nvim_get_namespaces())
-      if ns != s:ww &&
-        \!empty(nvim_buf_get_extmarks(a:bn, id, 0, -1, #{type: 'virt_text'}))
-        return 1
-      endif
-    endfor
-    return 0
-  endfunction
-else
-  function! s:FindOtherVT(bn) abort
-    for pt in prop_type_list()
-      if pt != s:ww && !empty(filter(prop_list(1, #{bufnr: a:bn, end_lnum: -1,
-                                    \types: [pt]}), 'has_key(v:val, "text")'))
-        return 1
-      endif
-    endfor
-    return 0
-  endfunction
-endif
 
 nnoremap <silent> <C-L> :<C-U>call <SID>RedrawWrapwidth()<CR><C-L>
 
