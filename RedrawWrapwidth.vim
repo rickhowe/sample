@@ -8,14 +8,14 @@ function! s:RedrawWrapwidth() abort
     let wi = getwininfo(wn)[0]
     let [tw, to] = (&cpoptions =~ 'n') ?
                           \[wi.width, wi.textoff] : [wi.width - wi.textoff, 0]
-    " find ww and other prop/extmark in this buffer
+    " find ww and all other vt in this buffer
     let pl = #{0: [], 1: []}
     if has('nvim')
       for [ns, id] in items(nvim_get_namespaces())
         let wl = (ns == ww)
         let pl[wl] += map(nvim_buf_get_extmarks(bn, id, 0, -1,
                                       \#{details: v:true}), '[v:val[1] + 1] +
-                  (wl ? [v:val[2] + 1, len(v:val[3].virt_text[0][0])] : [])')
+                  \(wl ? [v:val[2] + 1, len(v:val[3].virt_text[0][0])] : [])')
       endfor
     else
       for pt in prop_type_list()
