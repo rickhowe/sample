@@ -10,18 +10,20 @@ function! s:RedrawWrapwidth() abort
     " find ww and all other vt in this buffer
     let vt = #{0: [], 1: []}
     if has('nvim')
-      for [ns, id] in items(nvim_get_namespaces())
-        let wl = (ns == ww)
-        let vt[wl] += map(nvim_buf_get_extmarks(bn, id, 0, -1,
-                                      \#{details: v:true}), '[v:val[1] + 1] +
-                  \(wl ? [v:val[2] + 1, len(v:val[3].virt_text[0][0])] : [])')
+      for ex in nvim_buf_get_extmarks(bn, -1, 0, -1, #{details: v:true})
+        if ex[3].ns_id == s:wn
+          let vt.1 += [[ex[1] + 1, ex[2] + 1, len(ex[3].virt_text[0][0])]]
+        else
+          let vt.0 += [[ex[1] + 1]]
+        endif
       endfor
     else
-      for pt in prop_type_list()
-        let wl = (pt == ww)
-        let vt[wl] += map(prop_list(1, #{bufnr: bn, end_lnum: -1,
-                                                              \types: [pt]}),
-                  \'[v:val.lnum] + (wl ? [v:val.col, len(v:val.text)] : [])')
+      for pr in prop_list(1, #{bufnr: bn, end_lnum: -1})
+        if pr.type == s:ww
+          let vt.1 += [[pr.lnum, pr.col, len(pr.text)]]
+        else
+          let vt.0 += [[pr.lnum]]
+        endif
       endfor
     endif
     " find lines to redraw
