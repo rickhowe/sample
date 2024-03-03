@@ -19,10 +19,11 @@ between windows.
 This plugin is called each time the `diff` option is set or reset on a window.
 It counts the number of screen lines required to align the position of each
 line between all the diff mode windows in a tab page, and then fill them with
-virtual lines on each window. Those virtual lines are shown as diff filler
-lines, specified in `diff` item in `fillchars` option (default: `-`) using
-`hl-DiffDelete` highlight, at "below" the actual lines. Accordingly, each
-corresponding line will be aligned side-by-side on the same screen position.
+virtual lines on each window. As a default, those virtual lines are shown as
+diff filler lines, specified in `diff` item in `fillchars` option
+(default: `-`) using `hl-DiffDelete` highlight, at "below" the actual lines.
+Accordingly, each corresponding line will be aligned side-by-side on the same
+screen position.
 
 ![demo02](demo02.png)
 
@@ -47,11 +48,18 @@ highlight as virtual lines, and align each line between windows.
 ### Options
 
 * `g:WrapFiller`, `t:WrapFiller`
+  * Enable (1) or disable (0) the plugin (default: 1)
 
-  | Value | Description |
-  | --- | --- |
-  | 1 | enable (default) |
-  | 0 | disable |
+* `g:WrapFillerMinLines`, `t:WrapFillerMinLines`
+  * The minimum number of virtual lines (default: 0)
+
+* `g:WrapFillerDiff`
+  * A list of a highlight group, a character and its length used in the `diff`
+    mode (default: ['DiffDelete', '-', -1], (-1 means window width))
+
+* `g:WrapFillerList`
+  * A list of a highlight group, a character and its length used in the `list`
+    mode (default: ['NonText', '<', 3])
 
 ### Requirements
 
