@@ -55,11 +55,11 @@ highlight as virtual lines, and align each line between windows.
 
 * `g:WrapFillerDiff`
   * A list of a highlight group, a character and its length used in the `diff`
-    mode (default: ['DiffDelete', '-', -1], (-1 means window width))
+    mode (default: `['DiffDelete', '-', -1]`, (`-1` means window width))
 
 * `g:WrapFillerList`
   * A list of a highlight group, a character and its length used in the `list`
-    mode (default: ['NonText', '<', 3])
+    mode (default: `['NonText', '<', 3]`)
 
 ### Requirements
 
