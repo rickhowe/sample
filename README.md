@@ -62,19 +62,15 @@ highlight as virtual lines, and align each line between those windows.
 
 * `g:WrapFillerMinLines`, `t:WrapFillerMinLines` : The minimum number of virtual lines (default: 0)
 
-* `g:WrapFiller`, `t:WrapFiller`
-  * Enable or disable the *wrapfiller* (default: 1)
-    - 0 : disable
-    - 1 : enable
+* `g:WrapFiller`, `t:WrapFiller` : Enable or disable the *wrapfiller* (default: 1)
+  - 0 : disable
+  - 1 : enable
 
-* `g:WrapFillerType`
-  * A type of the virtual line (default: 1)
-    - 0 : `~` in `hl-EndOfBuffer`, end of buffer (eob) filler line
-    - 1 : `diff` mode: `-------` in `hl-DiffDelete`, diff filler line
-          `list` mode: `<<<` in `hl-NonText` |
+* `g:WrapFillerType` : A type of the virtual line (default: 1)
+  - 0 : `~` in `hl-EndOfBuffer`, end of buffer (eob) filler line
+  - 1 : `diff` mode: `-------` in `hl-DiffDelete`, diff filler line<br>`list` mode: `<<<` in `hl-NonText` |
 
-* `g:WrapFillerMinLines`, `t:WrapFillerMinLines`
-  * The minimum number of virtual lines (default: 0)
+* `g:WrapFillerMinLines`, `t:WrapFillerMinLines` : The minimum number of virtual lines (default: 0)
 
 ### Requirements
 
