@@ -1,6 +1,6 @@
 # wrapfiller
 
-## Align each line visually between windows even if wrapped
+## Align each wrapped line virtually between windows
 
 This plugin fills with virtual lines to visually align the position of each
 line between two or more windows, even when the `wrap` option is on, and makes
@@ -34,10 +34,9 @@ searching, the new lines will be checked in that limited range. Which means,
 independently of the file size, the number of lines to be checked and then the
 time consumed are always constant.
 
-While **wrapfiller** is enabled, those virtual lines will be adjusted with
-several options (such as `number`, `linebreak`, `foldcolumn`, `tabstop`) as
-well as the change of text and window width, which affects the way the text is
-visually displayed.
+Those virtual lines are, while shown, automatically adjusted to a change of
+several options (such as `number`, `linebreak`, `foldcolumn`, `tabstop`),
+text, and window width.
 
 You can also use the `list` option for a normal non-diff mode window. This
 plugin is called to find all the list mode windows, show `<<<` in `hl-NonText`
@@ -47,19 +46,20 @@ highlight as virtual lines, and align each line between windows.
 
 ### Options
 
-* `g:WrapFiller`, `t:WrapFiller`
-  * Enable (1) or disable (0) the plugin (default: 1)
+* `g:WrapFiller`, `t:WrapFiller` : Enable or disable the **wrapfiller** (default: 1)
 
-* `g:WrapFillerMinLines`, `t:WrapFillerMinLines`
-  * The minimum number of virtual lines (default: 0)
+  | 0 | disable |
+  | 1 | enable |
 
-* `g:WrapFillerDiff`
-  * A list of a highlight group, a character and its length used in the `diff`
-    mode (default: `['DiffDelete', '-', -1]`, (`-1` means window width))
+* `g:WrapFillerType` : A type of the virtual line (default: 1)
 
-* `g:WrapFillerList`
-  * A list of a highlight group, a character and its length used in the `list`
-    mode (default: `['NonText', '<', 3]`)
+  | Value | Description |
+  | --- | --- |
+  | 0 | `~` in `hl-EndOfBuffer`, end of buffer (eob) filler line |
+  | 1 | `diff` mode: `-------` in `hl-DiffDelete`, diff filler line |
+  |   | `list` mode: `<<<` in `hl-NonText` |
+
+* `g:WrapFillerMinLines`, `t:WrapFillerMinLines` : The minimum number of virtual lines (default: 0)
 
 ### Requirements
 
