@@ -49,6 +49,7 @@ highlight as virtual lines, and align each line between windows.
 * `g:WrapFiller`, `t:WrapFiller` : Enable or disable the *wrapfiller* (default: 1)
 
   | 0 | disable |
+  | --- | --- |
   | 1 | enable |
   | --- | --- |
 
