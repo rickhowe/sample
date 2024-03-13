@@ -44,14 +44,14 @@ post-9.0 patches and nvim 0.10.0.
 
 * `:[range]Wrapwidth!`
   * Redraw the *wrapwidth* virtual spaces set in the current buffer (since
-    patch 9.0.1762). It an be useful when those spaces are accidentally
+    patch 9.0.1762). It can be useful when those spaces are accidentally
     displaced by other virtual text than *wrapwidth*.
 
-#### Option
+#### Options
 
 * `b:wrapwidth_hl`, `g:wrapwidth_hl`
-  * A highlight group name to make *wrapwidth* virtual spaces visible
-    (default: 'NonText').
+  * A highlight group name to make *wrapwidth* virtual spaces visible (default:
+  'NonText').
 
 * `b:wrapwidth_sign`, `g:wrapwidth_sign`
   * A string to indicate the position of the wrap column in the virtual spaces
