@@ -1,6 +1,6 @@
 # wrapwidth
 
-### Wraps long lines visually at a specific column
+### Wraps long lines virtually at a specific column
 
 The `wrap` option is useful but no way to select a column to be wrapped. And
 the `textwidth` and `wrapmargin` options break a long line but it is hard
@@ -9,7 +9,7 @@ wrapped in insert mode.
 ![sample0](sample0.png)
 
 This plugin provides the *:Wrapwidth* command to set a column at which a
-longer line will be visually wrapped. When `wrap` is on, the required number
+longer line will be virtually wrapped. When `wrap` is on, the required number
 of blank spaces are inserted as **virtual-text** at right edge of each screen
 line.
 
@@ -25,7 +25,7 @@ globally to see a wrap position sign and count number on each wrapped line.
 
 ![sample2](sample2.png)
 
-If a file is big and not necessary to visually wrap all lines at the same
+If a file is big and not necessary to virtually wrap all lines at the same
 column, it is possible to specify a range to set *wrapwidth* lines.
 
 Note that the inline **virtual-text** feature has been implemented in vim
@@ -35,7 +35,7 @@ post-9.0 patches and nvim 0.10.0.
 
 * `:[range]Wrapwidth N`
   * Set a *wrapwidth* at the N-th column in the current buffer. A longer line
-    will be visually wrapped at that column and continued to the next screen
+    will be virtually wrapped at that column and continued to the next screen
     line. It is possible to specify *wrapwidth* lines in `[range]` (default: all
     lines) in a buffer.
     - N > 0: a text width from left edge of a text, like `textwidth`
