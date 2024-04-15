@@ -84,7 +84,7 @@ This plugin requires a builtin diff function:
 
 ### See also
 
-There are other diff related plugins available:
+There are diff related plugins available:
 * [diffchar.vim](https://github.com/rickhowe/diffchar.vim): Highlight the exact differences, based on characters and words
 * [spotdiff.vim](https://github.com/rickhowe/spotdiff.vim): A range and area selectable `:diffthis` to compare partially
-* [wrapfilter](https://github.com/rickhowe/wrapfilter): Align each wrapped line virtually between windows
+* [wrapfiller](https://github.com/rickhowe/wrapfiller): Align each wrapped line virtually between windows
