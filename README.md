@@ -12,7 +12,7 @@ For example, vim will show such differences for these 3 files:
 ![sample1](sample1.png)
 
 This plugin gets vim to exclude comment lines so that you can focus on the
-"return" statement in 3 files.
+"return" statement.
 
 ![sample2](sample2.png)
 
