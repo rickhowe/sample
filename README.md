@@ -27,7 +27,7 @@ or `g:DiffFilterExpr` global variable. In above example, the following lambda
 expression is specified to exclude comment lines.
 ```
 let g:DiffFilterExpr = {lnum -> synIDtrans(synID(lnum,
-                  \match(getline(lnum), '\S') + 1, 0)) != hlID('Comment')}
+      \match(getline(lnum), '\S') + 1, 0)) != hlID('Comment')}
 ```
 It checks a syntax highlighting on each line. That is a default expression of
 `g:DiffFilterExpr` variable, which can be commonly used for a comment line in
@@ -41,7 +41,7 @@ In addition, to check a comment block as well for a filetype like C and C++:
 function MyDiffFilterExpr(lnum)
   let [c_line, c_start, c_end] = ['//', '/*', '*/']
   let [c_line, c_start, c_end] = map([c_line, c_start, c_end],
-                                        \{_, v -> '^\s*' . escape(v, '/*')})
+                        \{_, v -> '^\s*' . escape(v, '/*')})
   for c in [c_line, c_start, c_end]
     if getline(a:lnum) =~ c | return 1 | endif
   endfor
