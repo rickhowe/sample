@@ -2,6 +2,8 @@
 
 ## Selectively compare lines as you want in diff
 
+### Introduction
+
 The standard "diff" command supports "--ignore-matching-lines=regexp (-I
 regexp)" option to ignore hunks if all the inserted and deleted lines match
 regexp. This plugin provides similar functionality but tries a line-level
@@ -15,6 +17,23 @@ This plugin gets vim to exclude comment lines so that you can focus on
 seeing the differences on the "return" statement.
 
 ![sample2](sample2.png)
+
+As a default, like below, this plugin highlights the diff excluded lines in
+`hl-Conceal`. And, if "filler" is present in the `diffopt` option, it shows
+filler lines with an eob(`~`) character specified in the `fillchars` option
+to align corresponding diff compared lines between windows. To hide those
+concealed lines, use the `conceallevel` and `concealcursor` options. Disable
+`t:DiffFilterConceal` or `g:DiffFilterConceal` variable if not necessary,
+
+![sample3](sample3.png)
+
+Use `:diffupdate` command to reevaluate and redraw diff lines when text or
+option is changed.
+
+Note that this plugin keeps "hiddenoff" set in the `diffopt` option to avoid
+an unexpected accident due to hidden diff'ed buffers.
+
+### Filter Expression
 
 Internally, this plugin sets a function to the `diffexpr` option to:
 * evaluate if each line should be compared or not
@@ -74,17 +93,6 @@ function MyDiffFilterExpr(lnum)
 endfunction
 let g:DiffFilterExpr = function('MyDiffFilterExpr')
 ```
-As a default, like below, this plugin highlights the diff excluded lines in
-`hl-Conceal`. And, if "filler" is present in the `diffopt` option, it shows
-filler lines with an eob(`~`) character specified in the `fillchars` option
-to align corresponding diff compared lines between windows. To hide those
-concealed lines, use the `conceallevel` and `concealcursor` options. Disable
-`t:DiffFilterConceal` or `g:DiffFilterConceal` variable if not necessary,
-
-![sample3](sample3.png)
-
-Use `:diffupdate` command to reevaluate and redraw diff lines when text or
-option is changed.
 
 ### Options
 
