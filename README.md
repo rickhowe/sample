@@ -18,20 +18,20 @@ seeing the differences on the "return" statement.
 
 ![sample2](sample2.png)
 
-As a default, like below, this plugin highlights the diff excluded lines in
-`hl-Conceal`. And, if "filler" is present in the `diffopt` option, it shows
-filler lines with an eob(`~`) character specified in the `fillchars` option
-to align corresponding diff compared lines between windows. To hide those
-concealed lines, use the `conceallevel` and `concealcursor` options. Disable
-`t:DiffFilterConceal` or `g:DiffFilterConceal` variable if not necessary,
+As a default, this plugin highlights the diff excluded lines in `hl-Conceal`.
+To hide those concealed lines, use the `conceallevel` and `concealcursor`
+options. Additionally, like below, you can show those filler lines with an
+eob(`~`) character to align corresponding diff compared lines between windows.
+Disable `t:DiffFilterConceal` or `g:DiffFilterConceal` variable if not
+necessary,
 
 ![sample3](sample3.png)
 
 Use `:diffupdate` command to reevaluate and redraw diff lines when text or
 option is changed.
 
-Note that this plugin keeps "hiddenoff" set in the `diffopt` option to avoid
-an unexpected accident due to hidden diff'ed buffers.
+Note that this plugin does not support a hidden diff'ed buffer and always
+holds "hiddenoff" in the `diffopt` option to avoid an unexpected behavior.
 
 ### Filter Expression
 
@@ -102,8 +102,8 @@ let g:DiffFilterExpr = function('MyDiffFilterExpr')
                     \match(getline(lnum), '\S') + 1, 0)) != hlID('Comment')}`)
 
 * `t:DiffFilterConceal`, `g:DiffFilterConceal`
-  * Enable (1) or disable (0) to highlight the diff excluded lines in
-    `hl-Conceal` and show filler lines (default: `1`)
+  * Highlight the diff excluded lines in `hl-Conceal` (1), plus show those
+    filler lines (2), or disable them (0) (default: `1`)
 
 * `g:DiffFilter`
   * Enable (1) or disable (0) this plugin (default: `1`).
