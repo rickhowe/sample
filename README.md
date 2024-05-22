@@ -20,18 +20,14 @@ seeing the differences on the "return" statement.
 
 As a default, this plugin highlights the diff excluded lines in `hl-Conceal`.
 To hide those concealed lines, use the `conceallevel` and `concealcursor`
-options. Additionally, like below, you can show those filler lines with an
-eob(`~`) character to align corresponding diff compared lines between windows.
-Disable `t:DiffFilterConceal` or `g:DiffFilterConceal` variable if not
-necessary,
+options. Additionally, like below, you can show filler lines with an eob(`~`)
+character to align corresponding diff compared lines between windows. Disable
+`t:DiffFilterConceal` or `g:DiffFilterConceal` variable if not necessary,
 
 ![sample3](sample3.png)
 
 Use `:diffupdate` command to reevaluate and redraw diff lines when text or
 option is changed.
-
-Note that this plugin does not support a hidden diff'ed buffer and always
-holds "hiddenoff" in the `diffopt` option to avoid an unexpected behavior.
 
 ### Filter Expression
 
