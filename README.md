@@ -44,12 +44,13 @@ expression is specified to exclude comment lines.
 ```
 let g:DiffFilterExpr = {lnum -> (&commentstring[:-2] == '%s') ?
   \getline(lnum) !~ '^\s*' . escape(&commentstring, '^$.*[]~\')[:-3] :
-  \synIDtrans(synID(lnum, match(getline(lnum), '\S') + 1, 0)) != hlID('Comment')}
+  \synIDtrans(synID(lnum, match(getline(lnum), '\S') + 1, 0)) !=
+                                                    \hlID('Comment')}
 ```
 That checks a comment string at the start of each line if the `&commentstring`
-option indicates it. Otherwise, checks a comment syntax highlighting on each
-line. That is a default expression of `g:DiffFilterExpr` variable, which can
-be commonly used for a comment line in a lot of filetypes.
+option indicates it possible. Otherwise, checks a comment syntax highlighting
+on each line. That is a default expression of `g:DiffFilterExpr` variable,
+which can be commonly used for a comment line in a lot of filetypes.
 
 You can set a function which checks a comment block as well for a filetype
 like C and C++:
