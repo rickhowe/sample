@@ -41,7 +41,7 @@ Internally, this plugin sets a function to the `diffexpr` option to:
 In above example, the following lambda expression is used to exclude comment
 lines.
 ```
-let g:DiffFilterExpr = {lnum -> (&commentstring[:-2] == '%s') ?
+{lnum -> (&commentstring[:-2] == '%s') ?
   \getline(lnum) !~ '^\s*' . escape(&commentstring, '^$.*[]~\')[:-3] :
   \synIDtrans(synID(lnum, match(getline(lnum), '\S') + 1, 0)) !=
                                                     \hlID('Comment')}
