@@ -12,15 +12,14 @@ For example, a diff file in unified format will be shown like this:
 This syntax plugin:
 * identify either of unified, context, or normal "ed-style" diff format
 * find corresponding changed lines to be compared
-* split each line to a list of diff units based on the |g:DiffUnit| variable
-* compare them and find the changed and added units using a builtin diff()
-  function
+* split each line to a list of diff units based on the `g:DiffUnit` variable
+* compare them and find the changed and added units
 * show those units in single or several syntax highlights based on the
-  |g:DiffColors| variable
+  `g:DiffColors` variable
 
 In addition to those diff formats, if the file extension is ".diff" or the
 `syntax` option is set to "diff", this syntax plugin checks a file including
-git conflict markers and shows the diff units like this:
+**git conflict markers** and shows the diff units like this:
 
 ![gitconflict](gitconflict.png)
 
@@ -42,4 +41,4 @@ git conflict markers and shows the diff units like this:
   | Value | Description |
   | --- | --- |
   | 0 | `hl-DiffChange` |
-  | 1 | `hl-DiffChange` + several groups (default) |
+  | 1 | `hl-DiffChange` + several highlight groups (default) |
