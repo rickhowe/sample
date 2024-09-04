@@ -14,7 +14,7 @@ This syntax plugin:
 * find corresponding changed lines to be compared
 * split each line to a list of diff units based on the `g:DiffUnit` variable
 * compare them and find the changed and added units using a builtin `diff()`
-  function
+  function or a plugin specific function
 * show those units in single or several syntax highlights based on the
   `g:DiffColors` variable
 
