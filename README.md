@@ -1,6 +1,6 @@
 # diffunitsyntax
 
-## Highlight word or character based diff units in diff format
+### Highlight word or character based diff units in diff format
 
 This plugin is an additional vim syntax for diff format and highlights
 changed/added/deleted diff units on word or character basis, to make it
@@ -29,13 +29,13 @@ or the `syntax` option is set to "diff", this syntax plugin identifies a file
 including **git conflict markers** and **diff indicators (`-`/`+` and `<`/`>`)**,
 and then shows the diff units like this:
 
-#### git conflict markers:
+git conflict markers:
 ![gitconflict](gitconflict.png)
 
-#### diff indicators:
+diff indicators:
 ![diffindicator](diffindicator.png)
 
-### Options
+#### Options
 
 * `b:DiffUnit`, `g:DiffUnit`: A type of diff unit
 
