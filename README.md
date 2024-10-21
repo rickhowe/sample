@@ -30,9 +30,11 @@ including **git conflict markers** and **diff indicators (`-`/`+` and `<`/`>`)**
 and then shows the diff units like this:
 
 git conflict markers:
+
 ![gitconflict](gitconflict.png)
 
 diff indicators:
+
 ![diffindicator](diffindicator.png)
 
 #### Options
