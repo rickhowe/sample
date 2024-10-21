@@ -29,13 +29,9 @@ or the `syntax` option is set to "diff", this syntax plugin identifies a file
 including **git conflict markers** and **diff indicators (`-`/`+` and `<`/`>`)**,
 and then shows the diff units like this:
 
-git conflict markers:
+git conflict markers: ![gitconflict](gitconflict.png)
 
-![gitconflict](gitconflict.png)
-
-diff indicators:
-
-![diffindicator](diffindicator.png)
+diff indicators: ![diffindicator](diffindicator.png)
 
 #### Options
 
