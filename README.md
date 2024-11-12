@@ -42,14 +42,19 @@ popup/floating windows. This syntax plugin provides an option to apply the
 diff syntax and show actual differences, based on the `ApplyDiffSyntax` global
 variable, on the following plugins:
 
-* [vim-fugitive](https://github.com/tpope/vim-fugitive)
 
 <details>
-<summary>[vim-fugitive](https://github.com/tpope/vim-fugitive)</summary>
+<summary>vim-fugitive</summary>
 
 ![vim-fugitive](fugitive.png)
 </details>
+<details>
+<summary>neogit</summary>
 
+![neogit](neogit.png)
+</details>
+
+* [vim-fugitive](https://github.com/tpope/vim-fugitive)
 * [neogit](https://github.com/NeogitOrg/neogit)
 * [vim-gin](https://github.com/lambdalisue/vim-gin)
 * [gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim)
