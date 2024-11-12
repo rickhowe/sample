@@ -43,15 +43,16 @@ diff syntax and show actual differences, based on the `ApplyDiffSyntax` global
 variable, on the following plugins:
 
 * [vim-fugitive](https://github.com/tpope/vim-fugitive)
-<details>
-<summary>example</summary>
-![vim-fugitive](fugitive.png)
-</details>
 * [neogit](https://github.com/NeogitOrg/neogit)
 * [vim-gin](https://github.com/lambdalisue/vim-gin)
 * [gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim)
 * [vim-gitgutter](https://github.com/airblade/vim-gitgutter)
 * [vim-signify](https://github.com/mhinz/vim-signify)
+
+<details>
+<summary>example</summary>
+![vim-fugitive](fugitive.png)
+</details>
 
 #### Options
 
