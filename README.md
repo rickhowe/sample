@@ -43,9 +43,9 @@ diff syntax and show actual differences, based on the `ApplyDiffSyntax` global
 variable, on the following plugins:
 
 * [vim-fugitive](https://github.com/tpope/vim-fugitive)
-<br>
+
 <details>
-<summary>example</summary>
+<summary>[vim-fugitive](https://github.com/tpope/vim-fugitive)</summary>
 
 ![vim-fugitive](fugitive.png)
 </details>
