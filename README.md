@@ -48,6 +48,7 @@ variable, on the following plugins:
 
 ![vim-fugitive](fugitive.png)
 </details>
+
 * [neogit](https://github.com/NeogitOrg/neogit)
 * [vim-gin](https://github.com/lambdalisue/vim-gin)
 * [gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim)
