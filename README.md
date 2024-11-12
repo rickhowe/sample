@@ -49,9 +49,10 @@ variable, on the following plugins:
 * [vim-gitgutter](https://github.com/airblade/vim-gitgutter)
 * [vim-signify](https://github.com/mhinz/vim-signify)
 
+![vim-fugitive](fugitive.png)
+
 <details>
 <summary>example</summary>
-![vim-fugitive](fugitive.png)
 </details>
 
 #### Options
