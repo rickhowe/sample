@@ -46,7 +46,7 @@ variable, on the following plugins:
 <details>
 <summary>vim-fugitive</summary>
 
-![vim-fugitive](fugitive.png)
+![fugitive](fugitive.png)
 </details>
 <details>
 <summary>neogit</summary>
@@ -56,22 +56,22 @@ variable, on the following plugins:
 <details>
 <summary>vim-gin</summary>
 
-![vim-gin](vim-gin.png)
+![gin](gin.png)
 </details>
 <details>
 <summary>gtsigns.nvim</summary>
 
-![gitsigns.nvim](gitsigns.nvim.png)
+![gitsigns](gitsigns.png)
 </details>
 <details>
 <summary>vim-gitgutter</summary>
 
-![vim-gitgutter](vim-gitgutter.png)
+![gitgutter](gitgutter.png)
 </details>
 <details>
 <summary>vim-signify</summary>
 
-![vim-signify](vim-signify.png)
+![signify](signify.png)
 </details>
 
 * [vim-fugitive](https://github.com/tpope/vim-fugitive)
