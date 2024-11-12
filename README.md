@@ -52,8 +52,7 @@ variable, on the following plugins:
 
 <details>
 <summary>example</summary>
-abcde:<br>
-![vim-fugitive](fugitive.png)
+[![vim-fugitive](fugitive.png)]
 </details>
 
 #### Options
