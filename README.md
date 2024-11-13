@@ -29,7 +29,7 @@ file including git conflict markers and diff indicators (`-`/`+` and
 <details>
 <summary>git conflict markers</summary>
 
-![gitconflict](images/pitconflict.png)
+![gitconflict](images/gitconflict.png)
 </details>
 <details>
 <summary>diff indicators</summary>
@@ -72,7 +72,7 @@ the `ApplyDiffSyntax` global variable, on the following plugins:
 <summary>gtsigns.nvim</summary>
 
 [gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim)<br>
-![gitsigns](images/pitsigns.png)
+![gitsigns](images/gitsigns.png)
 </details>
 
 <details>
