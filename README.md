@@ -50,38 +50,38 @@ the `ApplyDiffSyntax` global variable, on the following plugins:
 <details>
 <summary>vim-fugitive</summary>
 
-![fugitive](fugitive.png)
 [vim-fugitive](https://github.com/tpope/vim-fugitive)
+![fugitive](fugitive.png)
 </details>
 <details>
 <summary>neogit</summary>
 
-![neogit](neogit.png)
 [neogit](https://github.com/NeogitOrg/neogit)
+![neogit](neogit.png)
 </details>
 <details>
 <summary>vim-gin</summary>
 
-![gin](gin.png)
 [vim-gin](https://github.com/lambdalisue/vim-gin)
+![gin](gin.png)
 </details>
 <details>
 <summary>gtsigns.nvim</summary>
 
-![gitsigns](gitsigns.png)
 [gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim)
+![gitsigns](gitsigns.png)
 </details>
 <details>
 <summary>vim-gitgutter</summary>
 
-![gitgutter](gitgutter.png)
 [vim-gitgutter](https://github.com/airblade/vim-gitgutter)
+![gitgutter](gitgutter.png)
 </details>
 <details>
 <summary>vim-signify</summary>
 
-![signify](signify.png)
 [vim-signify](https://github.com/mhinz/vim-signify)
+![signify](signify.png)
 </details>
 
 #### Options
