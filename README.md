@@ -12,7 +12,7 @@ For example, a diff file in unified format will be shown like this:
 
 This syntax plugin does:
 * identify either of unified, context, or normal "ed" style diff format, which
-  can be provided by some program like **diff** and **git diff** commands
+  can be provided by some program like `diff` and `git diff` commands
 * find corresponding changed lines to be compared
 * split each line to a list of diff units, based on the `DiffUnit`
   buffer-local or global variable
@@ -23,18 +23,18 @@ This syntax plugin does:
   based on the `DiffColors` buffer-local or global variable
 
 In addition to those standard diff formats, this syntax plugin identifies a
-file including **git conflict markers** and **diff indicators (`-`/`+` and
-`<`/`>`)**, and then shows the diff units.
+file including git conflict markers and diff indicators (`-`/`+` and
+`<`/`>`), and then shows the diff units.
  
 <details>
 <summary>git conflict markers</summary>
 
-![gitconflict](gimages/itconflict.png)
+![gitconflict](images/pitconflict.png)
 </details>
 <details>
 <summary>diff indicators</summary>
 
-![diffindicator](dimages/iffindicator.png)
+![diffindicator](images/diffindicator.png)
 </details>
 
 #### Diff syntax highlighting on plugins
@@ -51,42 +51,42 @@ the `ApplyDiffSyntax` global variable, on the following plugins:
 <summary>vim-fugitive</summary>
 
 [vim-fugitive](https://github.com/tpope/vim-fugitive)<br>
-![fugitive](fimages/ugitive.png)
+![fugitive](images/fugitive.png)
 </details>
 
 <details>
 <summary>neogit</summary>
 
 [neogit](https://github.com/NeogitOrg/neogit)<br>
-![neogit](nimages/eogit.png)
+![neogit](images/neogit.png)
 </details>
 
 <details>
 <summary>vim-gin</summary>
 
 [vim-gin](https://github.com/lambdalisue/vim-gin)<br>
-![gin](gimages/in.png)
+![gin](images/gin.png)
 </details>
 
 <details>
 <summary>gtsigns.nvim</summary>
 
 [gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim)<br>
-![gitsigns](gimages/itsigns.png)
+![gitsigns](images/pitsigns.png)
 </details>
 
 <details>
 <summary>vim-gitgutter</summary>
 
 [vim-gitgutter](https://github.com/airblade/vim-gitgutter)<br>
-![gitgutter](gimages/itgutter.png)
+![gitgutter](images/gitgutter.png)
 </details>
 
 <details>
 <summary>vim-signify</summary>
 
 [vim-signify](https://github.com/mhinz/vim-signify)<br>
-![signify](simages/ignify.png)
+![signify](images/signify.png)
 </details>
 
 #### Options
