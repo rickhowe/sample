@@ -32,16 +32,13 @@ git conflict markers:<br>
 diff indicators:<br>
 ![diffindicator](diffindicator.png)
  
-
-Usually, as long as the file extension is ".diff" or the `syntax` option is
-set to "diff", the diff items are highlighted using built-in diff syntax files
-including this plugin. However, to show **git diff** output and to preview a
-diff hunk, some popular git-related plugins do not use the diff syntax, but
-use match, text property, or extmark functions in normal, preview, and
-popup/floating windows. This syntax plugin provides an option to apply the
-diff syntax and show actual differences, based on the `ApplyDiffSyntax` global
-variable, on the following plugins:
-
+When the `syntax` option is set to "diff", vim original diff syntax files are
+loaded and the diff items are highlighted. However, to show `git diff` output
+and to preview a diff hunk, some popular git-related plugins do not use the
+diff syntax but use matchadd, text property, and extended mark functions in
+normal, preview, and popup/floating windows. This syntax plugin provides an
+option to apply the diff syntax and show actual inline differences, based on
+the `ApplyDiffSyntax` global variable, on the following plugins:
 
 <details>
 <summary>vim-fugitive</summary>
