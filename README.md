@@ -25,13 +25,18 @@ This syntax plugin does:
 In addition to those standard diff formats, this syntax plugin identifies a
 file including **git conflict markers** and **diff indicators (`-`/`+` and
 `<`/`>`)**, and then shows the diff units like this:
-
-git conflict markers:<br>
-![gitconflict](gitconflict.png)
-
-diff indicators:<br>
-![diffindicator](diffindicator.png)
  
+<details>
+<summary>git conflict markers</summary>
+
+![gitconflict](gitconflict.png)
+</details>
+<details>
+<summary>diff indicators</summary>
+
+![diffindicator](diffindicator.png)
+</details>
+
 #### Diff syntax highlighting on plugins
 
 When the `syntax` option is set to "diff", vim original diff syntax files are
