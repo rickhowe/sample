@@ -24,7 +24,7 @@ This syntax plugin does:
 
 In addition to those standard diff formats, this syntax plugin identifies a
 file including **git conflict markers** and **diff indicators (`-`/`+` and
-`<`/`>`)**, and then shows the diff units like this:
+`<`/`>`)**, and then shows the diff units.
  
 <details>
 <summary>git conflict markers</summary>
@@ -76,6 +76,7 @@ the `ApplyDiffSyntax` global variable, on the following plugins:
 <summary>vim-signify</summary>
 
 ![signify](signify.png)
+* [vim-signify](https://github.com/mhinz/vim-signify)
 </details>
 
 * [vim-fugitive](https://github.com/tpope/vim-fugitive)
