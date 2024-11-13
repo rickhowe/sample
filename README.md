@@ -32,7 +32,7 @@ git conflict markers:<br>
 diff indicators:<br>
 ![diffindicator](diffindicator.png)
  
-####Diff syntax highlighting on plugins
+#### Diff syntax highlighting on plugins
 
 When the `syntax` option is set to "diff", vim original diff syntax files are
 loaded and the diff items are highlighted. However, to show `git diff` output
