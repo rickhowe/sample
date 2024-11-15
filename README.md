@@ -41,11 +41,12 @@ file including git conflict markers and diff indicators (`-`/`+` and
 
 When the `syntax` option is set to "diff", vim original diff syntax files are
 loaded and the diff items are highlighted. However, to show `git diff` output
-and to preview a diff hunk, some popular git-related plugins do not use the
-diff syntax but use matchadd, text property, and extended mark functions in
-normal, preview, and popup/floating windows. This syntax plugin provides an
-option to apply the diff syntax and show actual inline differences, based on
-the `ApplyDiffSyntax` global variable, on the following plugins:
+and to preview a diff hunk, some popular git-related plugins use a plugin
+specific highlighting such as matchadd, text property, and extended mark
+functions in normal, preview, and popup/floating windows. This syntax plugin
+provides an option to apply the diff syntax highlighting and show actual
+differences, based on the `ApplyDiffSyntax` global variable, on the following
+plugins:
 
 <details>
 <summary>vim-fugitive</summary>
@@ -116,7 +117,7 @@ the `ApplyDiffSyntax` global variable, on the following plugins:
   | 0 | disable |
   | 1 | enable (default) |
 
-* `g:ApplyDiffSyntax` : Apply diff syntax on several git-related plugins
+* `g:ApplyDiffSyntax` : Apply diff syntax highlighting on git-related plugins
 
   | Value | Description |
   | --- | --- |
