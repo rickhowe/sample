@@ -2,29 +2,34 @@
 
 ### Highlight word or character based diff units in diff format
 
-This plugin is an additional vim syntax for diff format and highlights
-changed/added/deleted diff units on word or character basis, to make it
-possible to see the actual differences within a line.
+This plugin finds and highlights word or character based changed/added/deleted
+diff units in a diff format, to make it possible to see the actual differences
+within a line.
 
-For example, a diff file in unified format will be shown like this:
+This plugin not only works as an additional vim syntax for diff format but
+also applies the diff unit highlighting on some popular git-related plugins.
+
+For example, when a file name extension is ".diff" or the `syntax` option is
+set to "diff", a diff file in unified format will be shown like this:
 
 ![unified](images/unified.png)
 
-This syntax plugin does:
+This plugin does:
 * identify either of unified, context, or normal "ed" style diff format, which
   can be provided by some program like `diff` and `git diff` commands
-* find corresponding changed lines to be compared
+* find a pair of corresponding changed lines to be compared in a buffer
 * split each line to a list of diff units, based on the `DiffUnit`
   buffer-local or global variable
 * compare them and find the changed/added/deleted units, using a builtin
   `diff()` function or a plugin specific function along with the `diffopt`
   option
-* show those units in single or several background-colored syntax highlights,
-  based on the `DiffColors` buffer-local or global variable
+* highlight those units according to syntax, text property, or extended mark
+  mechanism applied on the buffer, using single or several background-colored
+  highlight groups, based on the `DiffColors` buffer-local or global variable
 
-In addition to those standard diff formats, this syntax plugin identifies a
-file including git conflict markers and diff indicators (`-`/`+` and
-`<`/`>`), and then shows the diff units.
+In addition to those standard diff formats, this plugin identifies a file
+including git conflict markers and diff indicators (`-`/`+` and `<`/`>`),
+and then shows the diff units.
  
 <details>
 <summary>git conflict markers</summary>
@@ -37,17 +42,17 @@ file including git conflict markers and diff indicators (`-`/`+` and
 ![diffindicator](images/diffindicator.png)
 </details>
 
-#### Diff syntax highlighting on plugins
+#### Diff unit highlighting on plugins
 
-When the `syntax` option is set to "diff", vim original diff syntax files are
-loaded and the diff items are highlighted. However, to show `git diff` output
-and to preview a diff hunk, some popular git-related plugins use a plugin
-specific highlighting such as matchadd, text property, and extended mark
-functions in normal, preview, and popup/floating windows. This syntax plugin
-provides an option to apply the diff syntax highlighting and show actual
-differences, based on the `ApplyDiffSyntax` global variable, on the following
-plugins:
+In some popular git-related plugins, to show `git diff` output and to preview
+a diff hunk in normal, preview, and popup/floating windows, another
+highlighting mechanism such as text property or extended mark is used instead
+of diff syntax. This plugin applies the diff unit highlighting and show actual
+differences on them, based on the `DiffUnitSyntax` buffer-local or global
+variable, on the following plugins (you are welcome to introduce more plugins
+to cover!):
 
+In normal window:
 <details>
 <summary>vim-fugitive</summary>
 
@@ -69,6 +74,7 @@ plugins:
 ![gin](images/gin.png)
 </details>
 
+In preview and popup/floating windows:
 <details>
 <summary>gtsigns.nvim</summary>
 
@@ -110,16 +116,10 @@ plugins:
   | 0 | `hl-DiffChange` |
   | 1 | `hl-DiffChange` + several highlight groups (default) |
 
-* `b:DiffUnitSyntax`, `g:DiffUnitSyntax` : Enable or disable this syntax plugin
+* `b:DiffUnitSyntax`, `g:DiffUnitSyntax` : Disable this plugin or apply diff unit highlighting
 
   | Value | Description |
   | --- | --- |
   | 0 | disable |
-  | 1 | enable (default) |
-
-* `g:ApplyDiffSyntax` : Apply diff syntax highlighting on git-related plugins
-
-  | Value | Description |
-  | --- | --- |
-  | 0 | disable |
-  | 1 | enable (default) |
+  | 1 | enable in normal window (default) |
+  | 2 | enable in normal, preview, and popup/floating windows |
