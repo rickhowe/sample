@@ -53,7 +53,7 @@ differences on them, based on the `DiffUnitSyntax` buffer-local or global
 variable, on the following plugins (you are welcome to introduce more plugins
 to cover!):
 
-* In normal window:
+In normal window:
 <details>
 <summary>vim-fugitive</summary>
 
@@ -75,7 +75,7 @@ to cover!):
 ![gin](images/gin.png)
 </details>
 
-* In preview and popup/floating windows:
+In preview and popup/floating windows:
 <details>
 <summary>gtsigns.nvim</summary>
 
