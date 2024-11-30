@@ -9,8 +9,8 @@ within a line.
 This plugin not only works as an additional vim syntax for diff format but
 also applies the diff unit highlighting on some popular git-related plugins.
 
-For example, when a file name extension is ".diff" or the `syntax` option is
-set to "diff", a diff file in unified format will be shown like this:
+For example, when a file name extension is `.diff` or the `syntax` option is
+set to `diff`, a diff file in unified format will be shown like this:
 
 ![unified](images/unified.png)
 
@@ -23,9 +23,10 @@ This plugin does:
 * compare them and find the changed/added/deleted units, using a builtin
   `diff()` function or a plugin specific function along with the `diffopt`
   option
-* highlight those units according to syntax, text property, or extended mark
-  mechanism applied on the buffer, using single or several background-colored
-  highlight groups, based on the `DiffColors` buffer-local or global variable
+* highlight those diff units according to syntax, text property, or extended
+  mark mechanism applied on the buffer, using single or several
+  background-colored highlight groups, based on the `DiffColors` buffer-local
+  or global variable
 
 In addition to those standard diff formats, this plugin identifies a file
 including git conflict markers and diff indicators (`-`/`+` and `<`/`>`),
@@ -52,7 +53,7 @@ differences on them, based on the `DiffUnitSyntax` buffer-local or global
 variable, on the following plugins (you are welcome to introduce more plugins
 to cover!):
 
-In normal window:
+* In normal window:
 <details>
 <summary>vim-fugitive</summary>
 
@@ -74,7 +75,7 @@ In normal window:
 ![gin](images/gin.png)
 </details>
 
-In preview and popup/floating windows:
+* In preview and popup/floating windows:
 <details>
 <summary>gtsigns.nvim</summary>
 
