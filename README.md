@@ -55,6 +55,10 @@ plugins to cover!):
 In normal window:
 <details>
 <summary>
+vim-fugitive
+<a href="https://github.com/tpope/vim-fugitive">(->)</a>
+</summary>
+<summary>
 <a href="https://github.com/tpope/vim-fugitive">vim-fugitive</a>
 </summary>
 
@@ -95,50 +99,6 @@ In preview and popup/floating windows:
 <a href="https://github.com/mhinz/vim-signify">vim-signify</a>
 </summary>
 
-![signify](images/signify.png)
-</details>
-
-In normal window:
-<details>
-<summary>vim-fugitive</summary>
-
-[vim-fugitive](https://github.com/tpope/vim-fugitive)<br>
-![fugitive](images/fugitive.png)
-</details>
-
-<details>
-<summary>neogit</summary>
-
-[neogit](https://github.com/NeogitOrg/neogit)<br>
-![neogit](images/neogit.png)
-</details>
-
-<details>
-<summary>vim-gin</summary>
-
-[vim-gin](https://github.com/lambdalisue/vim-gin)<br>
-![gin](images/gin.png)
-</details>
-
-In preview and popup/floating windows:
-<details>
-<summary>gtsigns.nvim</summary>
-
-[gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim)<br>
-![gitsigns](images/gitsigns.png)
-</details>
-
-<details>
-<summary>vim-gitgutter</summary>
-
-[vim-gitgutter](https://github.com/airblade/vim-gitgutter)<br>
-![gitgutter](images/gitgutter.png)
-</details>
-
-<details>
-<summary>vim-signify</summary>
-
-[vim-signify](https://github.com/mhinz/vim-signify)<br>
 ![signify](images/signify.png)
 </details>
 
