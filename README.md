@@ -56,21 +56,23 @@ In normal window:
 <details>
 <summary>
 vim-fugitive
-<a href="https://github.com/tpope/vim-fugitive">-></a>
+<a href="https://github.com/tpope/vim-fugitive">*</a>
 </summary>
 
 ![fugitive](images/fugitive.png)
 </details>
 <details>
 <summary>
-<a href="https://github.com/NeogitOrg/neogit">neogit</a>
+neogit
+<a href="https://github.com/NeogitOrg/neogit">*</a>
 </summary>
 
 ![neogit](images/neogit.png)
 </details>
 <details>
 <summary>
-<a href="https://github.com/lambdalisue/vim-gin">vim-gin</a>
+vim-gin
+<a href="https://github.com/lambdalisue/vim-gin">*</a>
 </summary>
 
 ![gin](images/gin.png)
@@ -79,21 +81,24 @@ vim-fugitive
 In preview and popup/floating windows:
 <details>
 <summary>
-<a href="https://github.com/lewis6991/gitsigns.nvim">gtsigns.nvim</a>
+gtsigns.nvim
+<a href="https://github.com/lewis6991/gitsigns.nvim">*</a>
 </summary>
 
 ![gitsigns](images/gitsigns.png)
 </details>
 <details>
 <summary>
-<a href="https://github.com/airblade/vim-gitgutter">vim-gitgutter</a>
+vim-gitgutter
+<a href="https://github.com/airblade/vim-gitgutter">*</a>
 </summary>
 
 ![gitgutter](images/gitgutter.png)
 </details>
 <details>
 <summary>
-<a href="https://github.com/mhinz/vim-signify">vim-signify</a>
+vim-signify
+<a href="https://github.com/mhinz/vim-signify">*</a>
 </summary>
 
 ![signify](images/signify.png)
