@@ -56,10 +56,7 @@ In normal window:
 <details>
 <summary>
 vim-fugitive
-<a href="https://github.com/tpope/vim-fugitive">(->)</a>
-</summary>
-<summary>
-<a href="https://github.com/tpope/vim-fugitive">vim-fugitive</a>
+<a href="https://github.com/tpope/vim-fugitive">-></a>
 </summary>
 
 ![fugitive](images/fugitive.png)
