@@ -52,11 +52,44 @@ show actual differences on them, based on the `DiffUnitSyntax` buffer-local or
 global variable, on the following plugins (you are welcome to introduce more
 plugins to cover!):
 
+In normal window:
 <details>
 <summary>
 <a href="https://github.com/tpope/vim-fugitive">vim-fugitive</a>
 </summary>
 ![fugitive](images/fugitive.png)
+</details>
+<details>
+<summary>
+<a href="https://github.com/NeogitOrg/neogit">neogit</a>
+</summary>
+![neogit](images/neogit.png)
+</details>
+<details>
+<summary>
+<a href="https://github.com/lambdalisue/vim-gin">vim-gin</a>
+</summary>
+![gin](images/gin.png)
+</details>
+
+In preview and popup/floating windows:
+<details>
+<summary>
+<a href="https://github.com/lewis6991/gitsigns.nvim">gtsigns.nvim</a>
+</summary>
+![gitsigns](images/gitsigns.png)
+</details>
+<details>
+<summary>
+<a href="https://github.com/airblade/vim-gitgutter">vim-gitgutter</a>
+</summary>
+![gitgutter](images/gitgutter.png)
+</details>
+<details>
+<summary>
+<a href="https://github.com/mhinz/vim-signify">vim-signify</a>
+</summary>
+![signify](images/signify.png)
 </details>
 
 In normal window:
