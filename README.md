@@ -54,7 +54,7 @@ plugins to cover!):
 
 <details>
 <summary>
-[vim-fugitive](https://github.com/tpope/vim-fugitive)
+<a href="https://github.com/tpope/vim-fugitive">vim-fugitive</a>
 </summary>
 ![fugitive](images/fugitive.png)
 </details>
